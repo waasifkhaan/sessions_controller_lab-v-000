@@ -21,5 +21,5 @@ class SessionsController < ApplicationController
       session[:name].destroy
     redirect_to root_path
     end
-  end 
+  end
 end
