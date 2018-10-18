@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   def destroy
     if session[:name]
-      session[:name].clear
+      session[:name] = nil
     end
     redirect_to root_path
   end
